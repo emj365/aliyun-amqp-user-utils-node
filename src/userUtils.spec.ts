@@ -15,12 +15,13 @@ describe('userUtils', () => {
     beforeEach(() => {
       nowMock = jest.spyOn(Date, 'now').mockReturnValue(1000)
     })
+
     afterEach(() => {
       nowMock.mockReset()
     })
 
-    it('should return', async () => {
-      expect(await userUtils.getPassword('sk')).toBe(
+    it('should return', () => {
+      expect(userUtils.getPassword('sk')).toBe(
         'RTEyMjUzODUwMDg0QjE5ODkwNUE4N0Q3NDI4NTJEMEUwQTZGQTEyMzoxMDAw'
       )
     })

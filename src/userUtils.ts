@@ -1,5 +1,4 @@
 import * as crypto from 'crypto'
-import * as bytes from 'utf8-bytes'
 
 const ACCESS_FROM_USER = 0
 
@@ -9,12 +8,13 @@ export const getUserName = (ak: string, resourceOwnerId: number): string => {
   )
 }
 
-export const getPassword = async (sk: string): Promise<string> => {
+export const getPassword = (sk: string): string => {
   const timestamp: number = Date.now()
-  const hmac: crypto.Hmac = crypto.createHmac('sha1', sk).setEncoding('base64')
-  return new Promise((resolve, reject) => {
-    hmac.end(bytes(timestamp), function() {
-      resolve(hmac.read())
-    })
-  })
+  const signature = crypto
+    .createHmac('sha1', timestamp.toString())
+    .update(sk)
+    .digest('hex')
+    .toUpperCase()
+
+  return Buffer.from(`${signature}:${timestamp}`).toString('base64')
 }
