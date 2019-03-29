@@ -6,6 +6,6 @@
 
 https://help.aliyun.com/document_detail/106230.html
 
-### this project target to re-implement Java codes
+### This project target to re-implement Java codes
 
 https://onlinegdb.com/BkJVGFjd4
