@@ -1,6 +1,6 @@
 {
   "name": "aliyun-amqp-user-utils-node",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Aliyun AMQP User Utils in NodeJS",
   "main": "dist/userUtils.js",
   "types": "dist/userUtils.d.ts",

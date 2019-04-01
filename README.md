@@ -1,5 +1,7 @@
 # Unofficial Aliyun AMQP User Utils in NodeJS
 
+[![CircleCI](https://circleci.com/gh/emj365/aliyun-amqp-user-utils-node/tree/develop.svg?style=svg)](https://circleci.com/gh/emj365/aliyun-amqp-user-utils-node/tree/develop)
+
 ## Summary
 
 ### The official Java SDK Doc
