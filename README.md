@@ -1,6 +1,6 @@
 # Unofficial Aliyun AMQP User Utils in NodeJS
 
-[![CircleCI](https://circleci.com/gh/emj365/aliyun-amqp-user-utils-node/tree/develop.svg?style=svg)](https://circleci.com/gh/emj365/aliyun-amqp-user-utils-node/tree/develop)
+[![CircleCI](https://circleci.com/gh/emj365/aliyun-amqp-user-utils-node/tree/master.svg?style=svg)](https://circleci.com/gh/emj365/aliyun-amqp-user-utils-node/tree/master)
 
 ## Summary
 
